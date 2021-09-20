@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Assets/CSS/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pattaya">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <title>Blek's Audio Definitionss</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="logo flex-center pd-lr-2">
+        <span>
+          Blek's Audio Definitions
+        </span>
+      </div>
+      <nav id="navbar-desktop">
+        <ul class="nav-links pd-lr-2">
+          <li><a onclick="displayElement('headphone-modal')">Headphone</a></li>
+          <li><a onclick="displayElement('earphone-modal')">Earphone</a></li>
+          <li><a onclick="displayElement('speaker-modal')">Speaker</a></li>
+        </ul>
+      </nav>
+      <nav id="navbar-mobile">
+        <div class="logo flex-center pd-lr-2" id="mobile-menu-btn-close">
+          <span onclick="closeElement('navbar-mobile')"><i class="icon ion-md-close"></i></span>
+        </div>
+        <ul class="nav-links flex-center pd-lr-2">
+          <li><a onclick="displayElement('headphone-modal')">Headphone</a></li>
+          <li><a onclick="displayElement('earphone-modal')">Earphone</a></li>
+          <li><a onclick="displayElement('speaker-modal')">Speaker</a></li>
+        </ul>
+      </nav>
+      <div class="logo flex-center pd-lr-2" id="mobile-menu-btn">
+        <span onclick="displayElement('navbar-mobile')"><i class="icon ion-md-menu"></i></span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="mg-lr-2 ">
+      <article id="headphone" class="bg-cover-center">
+        <div class="article-content">
+          <div class="article-title">
+            <span>Headphone</span>
+          </div>
+          <span class="button" onclick="displayElement('headphone-modal')">Read Me</span>
+        </div>
+        <div id="headphone-modal" class="article-modal">
+          <div class="article-modal-content">
+            <div class="article-modal-title bg-cover-center flex-center">
+              <span>Headphone</span>
+            </div>
+            <div class="article-modal-paragraph">
+              <p>Headphones are a pair of small loudspeaker drivers worn on or around the head over a user's ears. They
+                are electroacoustic transducers, which convert an electrical signal to a corresponding sound. Headphones
+                let a single user listen to an audio source privately, in contrast to a loudspeaker, which emits sound
+                into the open air for anyone nearby to hear. Headphones are also known as earspeakers, earphones or,
+                colloquially, cans. Circumaural ('around the ear') and supra-aural ('over the ear') headphones use a
+                band over the top of the head to hold the speakers in place. Another type, known as earbuds or
+                earpieces consist of individual units that plug into the user's ear canal. A third type are bone
+                conduction headphones, which typically wrap around the back of the head and rest in front of the ear
+                canal, leaving the ear canal open. In the context of telecommunication, a headset is a combination of
+                headphone and microphone.</p>
+              <p>
+                Headphones connect to a signal source such as an audio amplifier, radio, CD player, portable media
+                player,
+                mobile phone, video game console, or electronic musical instrument, either directly using a cord, or
+                using
+                wireless technology such as Bluetooth, DECT or FM radio. The first headphones were developed in the late
+                19th century for use by telephone operators, to keep their hands free. Initially the audio quality was
+                mediocre and a step forward was the invention of high fidelity headphones.
+              </p>
+              <p>
+                Headphones exhibit a range of different audio reproduction quality capabilities. Headsets designed for
+                telephone use typically cannot reproduce sound with the high fidelity of expensive units designed for
+                music listening by audiophiles. Headphones that use cables typically have either a 1/4 inch (6.35mm) or
+                1/8 inch (3.5mm) phone jack for plugging the headphones into the audio source. Some stereo earbuds are
+                wireless, using Bluetooth connectivity to transmit the audio signal by radio waves from source devices
+                like cellphones and digital players. As a result of the Walkman effect beginning in the 1980s,
+                headphones started to be used in public places such as sidewalks, grocery stores, and public transit.
+                Headphones are also used by people in various professional contexts, such as audio engineers mixing
+                sound
+                for live concerts or sound recordings and DJs, who use headphones to cue up the next song without the
+                audience hearing, aircraft pilots and call center employees. The latter two types of employees use
+                headphones with an integrated microphone.
+              </p>
+            </div>
+            <div class="article-modal-close-btn flex-center">
+              <span class="button" onclick="closeElement('headphone-modal')">Close</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article id="earphone" class="bg-cover-center">
+        <div class="article-content">
+          <div class="article-title">
+            <span>Earphone</span>
+          </div>
+          <span class="button" onclick="displayElement('earphone-modal')">Read Me</span>
+        </div>
+        <div id="earphone-modal" class="article-modal">
+          <div class="article-modal-content">
+            <div class="article-modal-title bg-cover-center flex-center">
+              <span>Earphone</span>
+            </div>
+            <div class="article-modal-paragraph">
+              <p>Earphones are very small headphones that are fitted directly in the outer ear, facing but not inserted
+                in the ear canal. Earphones are portable and convenient, but many people consider them
+                uncomfortable. They provide hardly any acoustic isolation and leave room for ambient noise to seep
+                in; users may turn up the volume dangerously high to compensate, at the risk of causing hearing
+                loss. On the other hand, they let the user be better aware of their surroundings. Since the
+                early days of the transistor radio, earphones have commonly been bundled with personal music devices.
+                They are sold at times with foam or rubber pads for comfort. (The use of the term earbuds, which has
+                been around since at least 1984, did not hit its peak until after 2001, with the success of Apple's MP3
+                player.)</p>
+            </div>
+            <div class="article-modal-close-btn flex-center">
+              <span class="button" onclick="closeElement('earphone-modal')">Close</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article id="speaker" class="bg-cover-center">
+        <div class="article-content">
+          <div class="article-title">
+            <span>Speaker</span>
+          </div>
+          <span class="button" onclick="displayElement('speaker-modal')">Read Me</span>
+        </div>
+        <div id="speaker-modal" class="article-modal">
+          <div class="article-modal-content">
+            <div class="article-modal-title bg-cover-center flex-center">
+              <span>Speaker</span>
+            </div>
+            <div class="article-modal-paragraph">
+              <p>A loudspeaker is an electroacoustic transducer; a device which converts an electrical audio signal
+                into a corresponding sound. The most widely used type of speaker is the dynamic speaker. The sound
+                source (e.g., a sound recording or a microphone) must be amplified or strengthened with an audio power
+                amplifier before the signal is sent to the speaker.</p>
+              <p>
+                The dynamic speaker was invented in 1925 by Edward W. Kellogg and Chester W. Rice issued as US Patent
+                1,707,570. Apr 2, 1929. The dynamic speaker operates on the same basic principle as a dynamic
+                microphone, but in reverse, to produce sound from an electrical signal. When an alternating current
+                electrical audio signal is applied to its voice coil, a coil of wire suspended in a circular gap between
+                the poles of a permanent magnet, the coil is forced to move rapidly back and forth due to Faraday's law
+                of induction, which causes a diaphragm (usually conically shaped) attached to the coil to move back and
+                forth, pushing on the air to create sound waves. Besides this most common method, there are several
+                alternative technologies that can be used to convert an electrical signal into sound.
+              </p>
+              <p>
+                Speakers are typically housed in a speaker enclosure or speaker cabinet which is often a rectangular box
+                made of wood or sometimes plastic. The enclosure's materials and design play an important role in the
+                quality of the sound. The enclosure generally must be as stiff and non-resonant as practically possible.
+                Where high fidelity reproduction of sound is required, multiple loudspeaker transducers are often
+                mounted in the same enclosure, each reproducing a part of the audible frequency range (picture at
+                right). In this case, the individual speakers may be referred to as drivers and the entire unit is
+                called a loudspeaker. Drivers made for reproducing high audio frequencies are called tweeters, those for
+                middle frequencies are called mid-range drivers and those for low frequencies are called woofers.
+                Extremely low frequencies (16Hz-~100Hz) may be reproduced by separate subwoofers.
+              </p>
+              <p>
+                Smaller loudspeakers are found in devices such as radios, televisions, portable audio players,
+                computers, and electronic musical instruments. Larger loudspeaker systems are used for music, sound
+                reinforcement in theatres and concert halls, and in public address systems.
+              </p>
+            </div>
+            <div class="article-modal-close-btn flex-center">
+              <span class="button" onclick="closeElement('speaker-modal')">Close</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <aside class="pd-lr-2 mg-lr-2">
+      <img src="./Assets/Images/profile.jpg" alt="">
+      <h2>Muhammad Faza</h2>
+      <p>Informatics student at Politeknik Negeri Bandung</p>
+      <div id="profile-links">
+        <a href="https://github.com/blekkk" target="_blank"><i class="icon ion-logo-github"></i></a>
+        <a href="https://www.instagram.com/whenisfaza_/" target="_blank"><i class="icon ion-logo-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/muhammad-faza-2001/"><i class="icon ion-logo-linkedin"></i></a>
+      </div>
+      <p>From Bandung, Indonesia</p>
+    </aside>
+  </main>
+  <footer class="flex-center">
+    <span>&copy; 2021 Blek.</span>
+  </footer>
+  <script src="./Assets/JS/script.js"></script>
+</body>
+
+</html>
